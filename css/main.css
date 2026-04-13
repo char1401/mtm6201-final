@@ -1,44 +1,4 @@
-:root{
-  --primary:#182A3A; /* Yankees Blue */
-  --secondary:#425B6F; /* Deep Space Sparkle */
-  --accent:#D6BB80; /* Burlywood */
-  --accent-dark:#A08348; /* Dark Tan */
-  --neutral:#7A7E74; /* Smoke */
-  --white:#FFFFFF;
-}
-
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--primary);background:var(--white);line-height:1.6}
-
-/* Accessibility */
-.skip-link{position:absolute;left:0;top:-40px;background:var(--accent);color:#000;padding:.5rem .75rem;z-index:1000;border-radius:.25rem}
-.skip-link:focus{top:0}
-
-/* Typography scale */
-h1{font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.2;font-weight:700;margin-bottom:.75rem}
-h2{font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:700;margin-bottom:1.25rem}
-h3{font-size:1.25rem;font-weight:600}
-p{color:#2b3c4a}
-.small{color:var(--neutral)}
-
-/* Layout rhythm */
-.section{padding:64px 0}
-.section-sm{padding:40px 0}
-.section-lg{padding:88px 0}
-
-/* Navbar */
-.navbar{background:var(--primary)}
-.navbar .nav-link{color:#fff;opacity:.9}
-.navbar .nav-link:hover,.navbar .nav-link.active{opacity:1;text-decoration:underline}
-.navbar-toggler{border-color:rgba(255,255,255,.3)}
-
-/* Hero */
-.hero{background:linear-gradient(180deg,var(--secondary),#3a5264);color:#fff}
-.hero .lead{opacity:.9}
-
-/* Buttons */
-.btn-accent{background:var(--accent);color:#1a2a36;border:none;border-radius:.5rem;padding:.6rem 1rem;font-weight:600}
-.btn-accent:hover{background:var(--accent-dark);color:#fff}
+<style>
 .btn-outline-light{border-radius:.5rem}
 
 /* Cards */
@@ -75,3 +35,20 @@ p{color:#2b3c4a}
 @media (max-width:768px){
   .section{padding:48px 0}
 }
+
+/* Micro-interactions */
+.card{transition:transform .25s ease, box-shadow .25s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(0,0,0,.12)}
+
+.btn-accent{transition:transform .15s ease, box-shadow .15s ease}
+.btn-accent:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.15)}
+
+.nav-link{position:relative}
+.nav-link::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--accent);transition:width .25s}
+.nav-link:hover::after{width:100%}
+
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:all .6s ease}
+.reveal.active{opacity:1;transform:none}
+
+</style>
