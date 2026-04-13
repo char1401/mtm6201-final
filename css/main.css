@@ -1,4 +1,5 @@
 :root {
+  /* I put the main site colours here so they are easier to reuse. */
   --primary: #182A3A;
   --secondary: #425B6F;
   --accent: #D6BB80;
@@ -15,6 +16,7 @@
 *,
 *::before,
 *::after {
+  /* This makes padding and borders easier to work with. */
   box-sizing: border-box;
 }
 
@@ -23,6 +25,7 @@ html {
 }
 
 body {
+  /* This sets up the main font and base page colours. */
   margin: 0;
   font-family: "Inter", sans-serif;
   background: var(--primary);
@@ -31,11 +34,13 @@ body {
 }
 
 img {
+  /* This keeps images from overflowing their containers. */
   display: block;
   max-width: 100%;
 }
 
 picture {
+  /* This lets picture tags act like the image inside them in most places. */
   display: contents;
 }
 
@@ -55,11 +60,13 @@ a:hover {
 }
 
 :focus-visible {
+  /* This makes keyboard focus easier to see. */
   outline: 3px solid var(--accent-dark);
   outline-offset: 3px;
 }
 
 .visually-hidden {
+  /* This hides text visually but still lets screen readers read it. */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -72,6 +79,7 @@ a:hover {
 }
 
 .skip-link {
+  /* The skip link is hidden until it gets keyboard focus. */
   position: absolute;
   left: 1rem;
   top: -4rem;
@@ -89,6 +97,7 @@ a:hover {
 }
 
 .site-header {
+  /* This keeps the menu at the top while scrolling. */
   position: sticky;
   top: 0;
   z-index: 20;
@@ -98,6 +107,7 @@ a:hover {
 
 .header-inner,
 .container {
+  /* This gives the content a max width and keeps it centered. */
   width: var(--container);
   margin: 0 auto;
 }
@@ -127,6 +137,7 @@ a:hover {
 }
 
 .menu-toggle {
+  /* This is the mobile menu button. */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -166,6 +177,7 @@ a:hover {
 }
 
 .site-nav {
+  /* On small screens the menu starts hidden and opens with JavaScript. */
   position: absolute;
   top: calc(100% + 1px);
   left: 0;
@@ -201,10 +213,12 @@ a:hover {
 .hero,
 .hero-banner,
 .band-accent {
+  /* Gold sections use the accent colour from the palette. */
   background: var(--accent);
 }
 
 .band-dark {
+  /* Dark sections use the blue-gray colour. */
   background: var(--secondary);
   color: var(--white);
 }
@@ -228,10 +242,12 @@ a:hover {
 }
 
 .hero {
+  /* This is the main top section spacing. */
   padding: 2.75rem 0 2.25rem;
 }
 
 .hero-grid {
+  /* This stacks on mobile and becomes two columns on desktop. */
   display: grid;
   gap: 1.5rem;
   align-items: center;
@@ -323,6 +339,7 @@ summary {
 }
 
 .button {
+  /* This is the main button style used across the site. */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -357,11 +374,13 @@ summary {
 }
 
 .card-grid {
+  /* This grid is reused for card layouts. */
   display: grid;
   gap: 1rem;
 }
 
 .card {
+  /* Cards stay white so they stand out on both gold and dark sections. */
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -427,6 +446,7 @@ summary {
 
 .hero-media img,
 .image-panel img {
+  /* This makes the images crop nicely inside their boxes. */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -442,6 +462,7 @@ summary {
 }
 
 .program-visual {
+  /* This controls the wide field image on the Programs page. */
   max-width: 70rem;
   min-height: clamp(13rem, 32vw, 25rem);
   margin: 0 auto 2rem;
@@ -463,6 +484,7 @@ summary {
 }
 
 .coach-grid {
+  /* This grid holds the coach cards. */
   display: grid;
   gap: 1.2rem;
   text-align: center;
@@ -493,6 +515,7 @@ summary {
 }
 
 .timeline {
+  /* This is the stacked timeline on the About page. */
   display: grid;
   gap: 0.8rem;
 }
@@ -524,6 +547,7 @@ summary {
 }
 
 .values-grid {
+  /* This grid holds the values and the blue star icons. */
   display: grid;
   gap: 1rem;
   text-align: center;
@@ -561,6 +585,7 @@ summary {
 }
 
 .pricing-grid {
+  /* This grid holds the pricing cards. */
   display: grid;
   gap: 1rem;
 }
@@ -592,6 +617,7 @@ summary {
 }
 
 .form-grid {
+  /* This keeps the form fields spaced out evenly. */
   display: grid;
   gap: 0.9rem;
 }
@@ -654,6 +680,7 @@ textarea {
 }
 
 .faq-list {
+  /* The FAQ items stack with a small gap. */
   display: grid;
   gap: 0.6rem;
 }
@@ -721,6 +748,7 @@ textarea {
 }
 
 .footer-grid {
+  /* This lays out the footer columns. */
   display: grid;
   gap: 1.5rem;
 }
@@ -761,6 +789,7 @@ textarea {
 }
 
 .reveal {
+  /* This is the starting state before the scroll animation shows the item. */
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 400ms ease, transform 400ms ease;
@@ -772,6 +801,7 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /* This turns off animations for people who prefer less motion. */
   html {
     scroll-behavior: auto;
   }
@@ -790,6 +820,7 @@ textarea {
 }
 
 @media (min-width: 480px) {
+  /* Tablet-sized screens start getting two-column sections. */
   .card-grid.two-up,
   .stats,
   .values-grid,
@@ -805,6 +836,7 @@ textarea {
 }
 
 @media (min-width: 769px) {
+  /* Desktop screens get the full navigation and wider grids. */
   .menu-toggle {
     display: none;
   }
@@ -862,6 +894,7 @@ textarea {
 }
 
 @media (max-width: 479px) {
+  /* These rules make tiny screens a bit more comfortable. */
   .header-inner,
   .container {
     width: min(100% - 1rem, 40rem);

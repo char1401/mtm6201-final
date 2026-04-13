@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <!-- This skip link makes the page easier to use with a keyboard. -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- This is the shared site header and menu. -->
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
@@ -36,6 +39,7 @@
   </header>
 
   <main id="main-content">
+    <!-- This hero introduces the programs page and uses a responsive image. -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="reveal">
@@ -44,6 +48,7 @@
         </div>
         <div class="hero-media reveal">
           <picture>
+            <!-- I made two image sizes so small screens do not need the bigger file. -->
             <source media="(max-width: 480px)" srcset="images/our-programs-hero-360.jpg" sizes="calc(100vw - 2rem)">
             <source media="(min-width: 481px)" srcset="images/our-programs-hero-360.jpg 360w, images/our-programs-hero-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
             <img src="images/our-programs-hero-600.jpg" width="600" height="336" alt="Football athlete training on a field for program development" fetchpriority="high">
@@ -52,10 +57,12 @@
       </div>
     </section>
 
+    <!-- This section matches the mockup with the field image first and the program cards underneath. -->
     <section class="section band-dark">
       <div class="container">
         <div class="image-panel program-visual reveal">
           <picture>
+            <!-- The field image is below the hero, so it can lazy load. -->
             <source media="(max-width: 480px)" srcset="images/football-field-360.jpg" sizes="calc(100vw - 2rem)">
             <source media="(min-width: 481px)" srcset="images/football-field-360.jpg 360w, images/football-field-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 70rem">
             <img src="images/football-field-600.jpg" width="600" height="357" alt="Overhead view of a football field used for training and competition" loading="lazy">
@@ -126,6 +133,7 @@
       </div>
     </section>
 
+    <!-- This schedule section is separate so it can have the gold background from the mockup. -->
     <section class="section band-accent">
       <div class="container">
         <div class="section-centered reveal">
@@ -148,6 +156,7 @@
       </div>
     </section>
 
+    <!-- These pricing cards show the three main payment options. -->
     <section class="section band-dark">
       <div class="container">
         <div class="section-centered reveal">
@@ -194,6 +203,7 @@
       </div>
     </section>
 
+    <!-- This CTA gives users one more clear place to start. -->
     <section class="section band-accent">
       <div class="container section-centered reveal">
         <h2>Ready to Start Training?</h2>
@@ -203,6 +213,7 @@
     </section>
   </main>
 
+  <!-- This footer is shared with the other pages. -->
   <footer class="footer section-tight">
     <div class="container footer-grid four-up">
       <section>

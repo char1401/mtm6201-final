@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <!-- This skip link helps keyboard users jump right to the page content. -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- This is the top navigation that is reused on all pages. -->
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
@@ -36,6 +39,7 @@
   </header>
 
   <main id="main-content">
+    <!-- This is the main hero section for the home page. -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="reveal">
@@ -46,6 +50,7 @@
         </div>
         <div class="hero-media reveal">
           <picture>
+            <!-- The browser can pick the smaller image on smaller screens. -->
             <source media="(max-width: 480px)" srcset="images/hero-image-360.jpg" sizes="calc(100vw - 2rem)">
             <source media="(min-width: 481px)" srcset="images/hero-image-360.jpg 360w, images/hero-image-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
             <img src="images/hero-image-600.jpg" width="600" height="358" alt="Football players lined up on the field during practice" fetchpriority="high">
@@ -54,6 +59,7 @@
       </div>
     </section>
 
+    <!-- This section explains the main reasons someone would choose the training program. -->
     <section class="section band-dark">
       <div class="container">
         <div class="section-centered reveal">
@@ -80,6 +86,7 @@
       </div>
     </section>
 
+    <!-- These stats are meant to stand out as quick proof points. -->
     <section class="section band-accent">
       <div class="container">
         <div class="section-centered reveal">
@@ -106,6 +113,7 @@
       </div>
     </section>
 
+    <!-- I used figure and blockquote here because these are quotes from athletes. -->
     <section class="section band-dark">
       <div class="container">
         <div class="section-centered reveal">
@@ -152,6 +160,7 @@
       </div>
     </section>
 
+    <!-- This is the final call-to-action before the footer. -->
     <section class="section band-accent">
       <div class="container section-centered reveal">
         <h2>Ready to Take Your Game to the Next Level?</h2>
@@ -161,6 +170,7 @@
     </section>
   </main>
 
+  <!-- This footer gives users the important links and contact details again. -->
   <footer class="footer section-tight">
     <div class="container footer-grid four-up">
       <section>
@@ -194,6 +204,7 @@
     </div>
   </footer>
 
+  <!-- This schema helps search engines understand the business information. -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",

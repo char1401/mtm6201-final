@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <!-- This skip link is for accessibility and helps keyboard users skip the menu. -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- This is the main header and navigation. -->
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
@@ -36,6 +39,7 @@
   </header>
 
   <main id="main-content">
+    <!-- This hero matches the other inner pages with text and an image side by side. -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="reveal">
@@ -44,6 +48,7 @@
         </div>
         <div class="hero-media reveal">
           <picture>
+            <!-- The image changes size depending on the screen width. -->
             <source media="(max-width: 480px)" srcset="images/contact-us-hero-360.jpg" sizes="calc(100vw - 2rem)">
             <source media="(min-width: 481px)" srcset="images/contact-us-hero-360.jpg 360w, images/contact-us-hero-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
             <img src="images/contact-us-hero-600.jpg" width="600" height="336" alt="Athletes walking out toward the field, representing the next step in training" fetchpriority="high">
@@ -52,10 +57,12 @@
       </div>
     </section>
 
+    <!-- This section contains the contact form and the contact details beside it. -->
     <section class="section band-dark">
       <div class="container contact-layout">
         <div>
           <form class="card reveal" action="#" method="post">
+            <!-- Labels are included so the form is easier to understand and more accessible. -->
             <h2>Send Us a Message</h2>
             <div class="form-grid">
               <div class="field-row">
@@ -116,6 +123,7 @@
       </div>
     </section>
 
+    <!-- This map helps visitors find the facility location. -->
     <section class="section band-accent">
       <div class="container reveal">
         <h2>Visit Our Facility</h2>
@@ -123,6 +131,7 @@
       </div>
     </section>
 
+    <!-- I used details/summary so the FAQ works without extra JavaScript. -->
     <section class="section band-dark">
       <div class="container">
         <div class="section-centered reveal">
@@ -150,6 +159,7 @@
     </section>
   </main>
 
+  <!-- This footer gives quick links and contact info again. -->
   <footer class="footer section-tight">
     <div class="container footer-grid four-up">
       <section>
@@ -183,6 +193,7 @@
     </div>
   </footer>
 
+  <!-- This schema is here to describe the contact page to search engines. -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
