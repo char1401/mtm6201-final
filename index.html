@@ -15,7 +15,10 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
-        <img src="images/gentlegiantlogo-og.jpg" alt="Gentle Giant Training logo">
+        <picture>
+          <source srcset="images/gentlegiantlogo-48.jpg 48w, images/gentlegiantlogo-96.jpg 96w" sizes="32px">
+          <img src="images/gentlegiantlogo-48.jpg" width="48" height="47" alt="Gentle Giant Training logo">
+        </picture>
         <span>The Gentle Giant</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open site navigation">
@@ -42,7 +45,11 @@
           <a class="button" href="programs.html">Get Started</a>
         </div>
         <div class="hero-media reveal">
-          <img src="images/hero-image.webp" alt="Football players lined up on the field during practice">
+          <picture>
+            <source media="(max-width: 480px)" srcset="images/hero-image-360.jpg" sizes="calc(100vw - 2rem)">
+            <source media="(min-width: 481px)" srcset="images/hero-image-360.jpg 360w, images/hero-image-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
+            <img src="images/hero-image-600.jpg" width="600" height="358" alt="Football players lined up on the field during practice" fetchpriority="high">
+          </picture>
         </div>
       </div>
     </section>
@@ -110,7 +117,10 @@
               <p>"The attention to detail and accountability changed how I trained every week."</p>
             </blockquote>
             <figcaption class="testimonial-meta">
-              <img src="images/marcus-johnsonwebp.webp" alt="Portrait of athlete Marcus Johnson">
+              <picture>
+                <source srcset="images/marcus-johnson-96.jpg 96w, images/marcus-johnson-160.jpg 160w" sizes="48px">
+                <img src="images/marcus-johnson-96.jpg" width="96" height="54" alt="Portrait of athlete Marcus Johnson" loading="lazy">
+              </picture>
               <span><strong>Marcus Johnson</strong><br>Linebacker, Class of 2026</span>
             </figcaption>
           </figure>
@@ -119,7 +129,10 @@
               <p>"I felt more prepared for showcases and understood how to present myself to recruiters."</p>
             </blockquote>
             <figcaption class="testimonial-meta">
-              <img src="images/tyler-anderson.webp" alt="Portrait of athlete Tyler Anderson">
+              <picture>
+                <source srcset="images/tyler-anderson-96.jpg 96w, images/tyler-anderson-160.jpg 160w" sizes="48px">
+                <img src="images/tyler-anderson-96.jpg" width="96" height="67" alt="Portrait of athlete Tyler Anderson" loading="lazy">
+              </picture>
               <span><strong>Tyler Anderson</strong><br>Wide Receiver, Class of 2025</span>
             </figcaption>
           </figure>
@@ -128,7 +141,10 @@
               <p>"The coaches pushed me, but they also helped me stay focused in school and in the gym."</p>
             </blockquote>
             <figcaption class="testimonial-meta">
-              <img src="images/jordan-williams.webp" alt="Portrait of athlete Jordan Williams">
+              <picture>
+                <source srcset="images/jordan-williams-96.jpg 96w, images/jordan-williams-160.jpg 160w" sizes="48px">
+                <img src="images/jordan-williams-96.jpg" width="96" height="57" alt="Portrait of athlete Jordan Williams" loading="lazy">
+              </picture>
               <span><strong>Jordan Williams</strong><br>Student Athlete</span>
             </figcaption>
           </figure>

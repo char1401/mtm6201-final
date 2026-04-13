@@ -15,7 +15,10 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
-        <img src="images/gentlegiantlogo-og.jpg" alt="Gentle Giant Training logo">
+        <picture>
+          <source srcset="images/gentlegiantlogo-48.jpg 48w, images/gentlegiantlogo-96.jpg 96w" sizes="32px">
+          <img src="images/gentlegiantlogo-48.jpg" width="48" height="47" alt="Gentle Giant Training logo">
+        </picture>
         <span>The Gentle Giant</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open site navigation">
@@ -40,7 +43,11 @@
           <p class="lead">Ready to take the next step? Reach out and we will help you find the right training plan for your athlete.</p>
         </div>
         <div class="hero-media reveal">
-          <img src="images/contact-us-hero.webp" alt="Athletes walking out toward the field, representing the next step in training">
+          <picture>
+            <source media="(max-width: 480px)" srcset="images/contact-us-hero-360.jpg" sizes="calc(100vw - 2rem)">
+            <source media="(min-width: 481px)" srcset="images/contact-us-hero-360.jpg 360w, images/contact-us-hero-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
+            <img src="images/contact-us-hero-600.jpg" width="600" height="336" alt="Athletes walking out toward the field, representing the next step in training" fetchpriority="high">
+          </picture>
         </div>
       </div>
     </section>

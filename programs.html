@@ -15,7 +15,10 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
-        <img src="images/gentlegiantlogo-og.jpg" alt="Gentle Giant Training logo">
+        <picture>
+          <source srcset="images/gentlegiantlogo-48.jpg 48w, images/gentlegiantlogo-96.jpg 96w" sizes="32px">
+          <img src="images/gentlegiantlogo-48.jpg" width="48" height="47" alt="Gentle Giant Training logo">
+        </picture>
         <span>The Gentle Giant</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open site navigation">
@@ -43,7 +46,11 @@
     <section class="section band-dark">
       <div class="container">
         <div class="image-panel program-visual reveal">
-          <img src="images/football-field.webp" alt="Overhead view of a football field used for training and competition">
+          <picture>
+            <source media="(max-width: 480px)" srcset="images/football-field-360.jpg" sizes="calc(100vw - 2rem)">
+            <source media="(min-width: 481px)" srcset="images/football-field-360.jpg 360w, images/football-field-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 70rem">
+            <img src="images/football-field-600.jpg" width="600" height="357" alt="Overhead view of a football field used for training and competition" fetchpriority="high">
+          </picture>
         </div>
         <div class="card-grid two-up programs-grid">
           <article class="card program-card reveal">

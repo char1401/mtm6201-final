@@ -15,7 +15,10 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
-        <img src="images/gentlegiantlogo-og.jpg" alt="Gentle Giant Training logo">
+        <picture>
+          <source srcset="images/gentlegiantlogo-48.jpg 48w, images/gentlegiantlogo-96.jpg 96w" sizes="32px">
+          <img src="images/gentlegiantlogo-48.jpg" width="48" height="47" alt="Gentle Giant Training logo">
+        </picture>
         <span>The Gentle Giant</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open site navigation">
@@ -40,7 +43,11 @@
           <p class="lead">Founded by former Division I athletes, Gentle Giant Training exists to help football players build confidence, sharpen their game, and prepare for meaningful opportunities beyond high school.</p>
         </div>
         <div class="hero-media reveal">
-          <img src="images/about-us-hero.webp" alt="Football athletes walking toward the field from a tunnel before competition">
+          <picture>
+            <source media="(max-width: 480px)" srcset="images/about-us-hero-360.jpg" sizes="calc(100vw - 2rem)">
+            <source media="(min-width: 481px)" srcset="images/about-us-hero-360.jpg 360w, images/about-us-hero-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
+            <img src="images/about-us-hero-600.jpg" width="600" height="336" alt="Football athletes walking toward the field from a tunnel before competition" fetchpriority="high">
+          </picture>
         </div>
       </div>
     </section>
@@ -67,19 +74,28 @@
         </div>
         <div class="coach-grid">
           <article class="coach-card reveal">
-            <img src="images/coach-1.webp" alt="Head coach Michael Davis smiling in team gear">
+            <picture>
+              <source srcset="images/coach-1-96.jpg 96w, images/coach-1-160.jpg 160w" sizes="88px">
+              <img src="images/coach-1-160.jpg" width="160" height="112" alt="Head coach Michael Davis smiling in team gear" loading="lazy">
+            </picture>
             <h3>Coach Michael Davis</h3>
             <p>Head Coach</p>
             <p>Former Ohio State linebacker with 8 years of NFL experience. Specializes in defensive development and recruitment strategy.</p>
           </article>
           <article class="coach-card reveal">
-            <img src="images/coach-2.webp" alt="Coach Sarah Martinez standing on the training field">
+            <picture>
+              <source srcset="images/coach-2-96.jpg 96w, images/coach-2-160.jpg 160w" sizes="88px">
+              <img src="images/coach-2-160.jpg" width="160" height="112" alt="Coach Sarah Martinez standing on the training field" loading="lazy">
+            </picture>
             <h3>Coach Sarah Martinez</h3>
             <p>Strength Coach</p>
             <p>Former Division I quarterback coach with expertise in passing mechanics and offensive systems. 15 years coaching experience.</p>
           </article>
           <article class="coach-card reveal">
-            <img src="images/coach-3.webp" alt="Coach James Thompson leading a football drill session">
+            <picture>
+              <source srcset="images/coach-3-96.jpg 96w, images/coach-3-160.jpg 160w" sizes="88px">
+              <img src="images/coach-3-160.jpg" width="160" height="112" alt="Coach James Thompson leading a football drill session" loading="lazy">
+            </picture>
             <h3>Coach James Thompson</h3>
             <p>Skills Development</p>
             <p>Certified strength coach with a background in sports science. Develops customized training programs for peak athletic performance.</p>
@@ -133,22 +149,34 @@
         </div>
         <div class="values-grid">
           <div class="value-item reveal">
-            <img class="value-icon" src="images/blue-star.png" alt="" aria-hidden="true">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
             <strong>Opportunity</strong>
             <p>Creating pathways to college football</p>
           </div>
           <div class="value-item reveal">
-            <img class="value-icon" src="images/blue-star.png" alt="" aria-hidden="true">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
             <strong>Responsibility</strong>
             <p>Developing leaders on and off the field</p>
           </div>
           <div class="value-item reveal">
-            <img class="value-icon" src="images/blue-star.png" alt="" aria-hidden="true">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
             <strong>Discipline</strong>
             <p>Building mental and physical toughness</p>
           </div>
           <div class="value-item reveal">
-            <img class="value-icon" src="images/blue-star.png" alt="" aria-hidden="true">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
             <strong>Confidence</strong>
             <p>Empowering athletes to reach their potential</p>
           </div>
