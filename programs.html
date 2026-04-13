@@ -36,10 +36,19 @@
   </header>
 
   <main id="main-content">
-    <section class="section band-accent">
-      <div class="container reveal">
-        <h1>Our Programs</h1>
-        <p class="lead">Comprehensive football development programs built for athletes who want better technique, smarter training, and stronger recruiting preparation.</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <h1>Our Programs</h1>
+          <p class="lead">Comprehensive football development programs built for athletes who want better technique, smarter training, and stronger recruiting preparation.</p>
+        </div>
+        <div class="hero-media reveal">
+          <picture>
+            <source media="(max-width: 480px)" srcset="images/our-programs-hero-360.jpg" sizes="calc(100vw - 2rem)">
+            <source media="(min-width: 481px)" srcset="images/our-programs-hero-360.jpg 360w, images/our-programs-hero-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
+            <img src="images/our-programs-hero-600.jpg" width="600" height="336" alt="Football athlete training on a field for program development" fetchpriority="high">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -49,7 +58,7 @@
           <picture>
             <source media="(max-width: 480px)" srcset="images/football-field-360.jpg" sizes="calc(100vw - 2rem)">
             <source media="(min-width: 481px)" srcset="images/football-field-360.jpg 360w, images/football-field-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 70rem">
-            <img src="images/football-field-600.jpg" width="600" height="357" alt="Overhead view of a football field used for training and competition" fetchpriority="high">
+            <img src="images/football-field-600.jpg" width="600" height="357" alt="Overhead view of a football field used for training and competition" loading="lazy">
           </picture>
         </div>
         <div class="card-grid two-up programs-grid">
