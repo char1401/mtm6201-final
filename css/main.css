@@ -430,6 +430,27 @@ summary {
   box-shadow: var(--shadow);
 }
 
+.program-visual {
+  max-width: 70rem;
+  min-height: clamp(13rem, 32vw, 25rem);
+  margin: 0 auto 2rem;
+  box-shadow: var(--shadow);
+}
+
+.programs-grid {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.schedule-grid {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.schedule-card {
+  min-height: 100%;
+}
+
 .coach-grid {
   display: grid;
   gap: 1.2rem;
@@ -499,17 +520,15 @@ summary {
 
 .value-item {
   position: relative;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
-.value-item::before {
-  content: "";
+.value-icon {
   display: block;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 2rem;
+  height: 2rem;
   margin: 0 auto 0.65rem;
-  border: 2px solid var(--accent-dark);
-  border-radius: 50%;
+  object-fit: contain;
 }
 
 .image-panel {
@@ -517,11 +536,6 @@ summary {
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.24);
-}
-
-.hero-strip {
-  min-height: 18rem;
-  margin-top: 1.4rem;
 }
 
 .checklist,
@@ -824,16 +838,15 @@ textarea {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .program-layout,
   .contact-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 0.9fr);
+    grid-template-columns: minmax(0, 1.45fr) minmax(15rem, 0.72fr);
     gap: 1rem;
     align-items: start;
   }
 
-  .contact-layout {
-    grid-template-columns: minmax(0, 1.45fr) minmax(15rem, 0.72fr);
+  .schedule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
