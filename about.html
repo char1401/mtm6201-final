@@ -1,61 +1,189 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final-about-us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Gentle Giant Training</title>
+  <meta name="description" content="Learn about Gentle Giant Training, our coaching mission, staff, athlete development philosophy, and core values.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand text-white fw-bold" href="index.html">The Gentle Giant</a>
-  </div>
-</nav>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
+        <img src="images/gentlegiantlogo-og.jpg" alt="Gentle Giant Training logo">
+        <span>The Gentle Giant</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open site navigation">
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-open="false">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a aria-current="page" href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main class="section">
-  <div class="container mw-900">
-    <h2>About Us</h2>
-    <p>Founded by former Division I athletes with a passion for developing the next generation of football talent.</p>
-
-    <div class="row g-4 mt-2">
-      <div class="col-md-6">
-        <div class="card h-100"><div class="card-body"><h3>Our Mission</h3><p>Develop complete athletes—physically skilled, mentally tough, and academically prepared.</p></div></div>
+  <main id="main-content">
+    <section class="section band-accent">
+      <div class="container reveal">
+        <h1>About Us</h1>
+        <p class="lead">Founded by former Division I athletes, Gentle Giant Training exists to help football players build confidence, sharpen their game, and prepare for meaningful opportunities beyond high school.</p>
+        <div class="image-panel hero-strip reveal">
+          <img src="images/about-us-hero.webp" alt="Football athletes walking toward the field from a tunnel before competition">
+        </div>
       </div>
-      <div class="col-md-6">
-        <div class="card h-100"><div class="card-body"><h3>Our Vision</h3><p>Become the premier football development program placing 500+ athletes by 2030.</p></div></div>
+    </section>
+
+    <section class="section band-dark">
+      <div class="container card-grid two-up">
+        <article class="card reveal">
+          <span class="icon-badge" aria-hidden="true">M</span>
+          <h2>Our Mission</h2>
+          <p>Develop complete athletes who are physically prepared, mentally disciplined, and ready to represent themselves well on the field, in the classroom, and in the recruiting process.</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-badge" aria-hidden="true">V</span>
+          <h2>Our Vision</h2>
+          <p>Create a trusted football development program that equips hundreds of athletes with elite preparation, scholarship opportunities, and strong character.</p>
+        </article>
       </div>
+    </section>
+
+    <section class="section band-accent">
+      <div class="container">
+        <div class="section-centered reveal">
+          <h2>Meet Our Coaching Staff</h2>
+        </div>
+        <div class="coach-grid">
+          <article class="coach-card reveal">
+            <img src="images/coach-1.webp" alt="Head coach Michael Davis smiling in team gear">
+            <h3>Coach Michael Davis</h3>
+            <p>Head Coach</p>
+            <p>Former Ohio State linebacker with 8 years of NFL experience. Specializes in defensive development and recruitment strategy.</p>
+          </article>
+          <article class="coach-card reveal">
+            <img src="images/coach-2.webp" alt="Coach Sarah Martinez standing on the training field">
+            <h3>Coach Sarah Martinez</h3>
+            <p>Strength Coach</p>
+            <p>Former Division I quarterback coach with expertise in passing mechanics and offensive systems. 15 years coaching experience.</p>
+          </article>
+          <article class="coach-card reveal">
+            <img src="images/coach-3.webp" alt="Coach James Thompson leading a football drill session">
+            <h3>Coach James Thompson</h3>
+            <p>Skills Development</p>
+            <p>Certified strength coach with a background in sports science. Develops customized training programs for peak athletic performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-dark">
+      <div class="container">
+        <div class="section-centered reveal">
+          <h2 class="section-title">Our Journey</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-body">
+              <h3>Founded</h3>
+              <p>Gentle Giant Training launched with a mission to mentor athletes through elite instruction and consistent accountability.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-body">
+              <h3>First 100 Athletes</h3>
+              <p>The program expanded quickly as more athletes and families looked for technical coaching with a personal approach.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-body">
+              <h3>Facility Expansion</h3>
+              <p>Training space grew to support larger group sessions, off-season speed work, and position-specific development.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-body">
+              <h3>$10M in Scholarships</h3>
+              <p>Athletes from the program earned major scholarship opportunities through strong preparation and consistent guidance.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-accent">
+      <div class="container">
+        <div class="section-centered reveal">
+          <h2>Our Core Values</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-item reveal">
+            <strong>Opportunity</strong>
+            <p>Creating pathways to college football</p>
+          </div>
+          <div class="value-item reveal">
+            <strong>Responsibility</strong>
+            <p>Developing leaders on and off the field</p>
+          </div>
+          <div class="value-item reveal">
+            <strong>Discipline</strong>
+            <p>Building mental and physical toughness</p>
+          </div>
+          <div class="value-item reveal">
+            <strong>Confidence</strong>
+            <p>Empowering athletes to reach their potential</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-tight">
+    <div class="container footer-grid four-up">
+      <section>
+        <h2 class="visually-hidden">Company information</h2>
+        <h3>Gentle Giant Training</h3>
+        <p>Elite football training and recruitment support for committed athletes.</p>
+      </section>
+      <nav aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h3>Contact</h3>
+        <p><a href="tel:5551234567">(555) 123-4567</a><br><a href="mailto:info@gentlegianttraining.com">info@gentlegianttraining.com</a><br>1500 Championship Drive, Columbus, OH</p>
+      </section>
+      <section>
+        <h3>Follow Us</h3>
+        <ul class="social-list" aria-label="Social media links">
+          <li><a href="#" aria-label="Instagram">IG</a></li>
+          <li><a href="#" aria-label="Facebook">FB</a></li>
+          <li><a href="#" aria-label="YouTube">YT</a></li>
+        </ul>
+      </section>
     </div>
-
-    <h2 class="mt-5">Meet Our Coaching Staff</h2>
-    <div class="row g-4">
-      <div class="col-md-4"><div class="card text-center"><div class="card-body"><div class="icon mx-auto"><i class="bi bi-person"></i></div><h3>Coach Michael Davis</h3><p class="small">Head Coach & Founder</p></div></div></div>
-      <div class="col-md-4"><div class="card text-center"><div class="card-body"><div class="icon mx-auto"><i class="bi bi-person"></i></div><h3>Coach Sarah Martinez</h3><p class="small">Offensive Coordinator</p></div></div></div>
-      <div class="col-md-4"><div class="card text-center"><div class="card-body"><div class="icon mx-auto"><i class="bi bi-person"></i></div><h3>Coach James Thompson</h3><p class="small">Strength & Conditioning</p></div></div></div>
+    <div class="container copyright">
+      <small>&copy; 2026 Gentle Giant Training. All rights reserved.</small>
     </div>
+  </footer>
 
-    <h2 class="mt-5">Our Journey</h2>
-    <ul class="list-group">
-      <li class="list-group-item">2015 — Founded</li>
-      <li class="list-group-item">2018 — First 100 Athletes</li>
-      <li class="list-group-item">2021 — Facility Expansion</li>
-      <li class="list-group-item">2024 — $10M in Scholarships</li>
-    </ul>
-
-    <h2 class="mt-5 text-center">Our Core Values</h2>
-    <div class="row text-center g-3 mt-2">
-      <div class="col">Opportunity</div>
-      <div class="col">Responsibility</div>
-      <div class="col">Discipline</div>
-      <div class="col">Confidence</div>
-    </div>
-  </div>
-</main>
-
-<footer class="footer section-sm text-center"><div class="container"><div class="small">© 2026 Gentle Giant Training</div></div></footer>
-
+  <script src="javascript/main.js"></script>
 </body>
 </html>
