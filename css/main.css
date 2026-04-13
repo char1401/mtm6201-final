@@ -1,0 +1,77 @@
+:root{
+  --primary:#182A3A; /* Yankees Blue */
+  --secondary:#425B6F; /* Deep Space Sparkle */
+  --accent:#D6BB80; /* Burlywood */
+  --accent-dark:#A08348; /* Dark Tan */
+  --neutral:#7A7E74; /* Smoke */
+  --white:#FFFFFF;
+}
+
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--primary);background:var(--white);line-height:1.6}
+
+/* Accessibility */
+.skip-link{position:absolute;left:0;top:-40px;background:var(--accent);color:#000;padding:.5rem .75rem;z-index:1000;border-radius:.25rem}
+.skip-link:focus{top:0}
+
+/* Typography scale */
+h1{font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.2;font-weight:700;margin-bottom:.75rem}
+h2{font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:700;margin-bottom:1.25rem}
+h3{font-size:1.25rem;font-weight:600}
+p{color:#2b3c4a}
+.small{color:var(--neutral)}
+
+/* Layout rhythm */
+.section{padding:64px 0}
+.section-sm{padding:40px 0}
+.section-lg{padding:88px 0}
+
+/* Navbar */
+.navbar{background:var(--primary)}
+.navbar .nav-link{color:#fff;opacity:.9}
+.navbar .nav-link:hover,.navbar .nav-link.active{opacity:1;text-decoration:underline}
+.navbar-toggler{border-color:rgba(255,255,255,.3)}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--secondary),#3a5264);color:#fff}
+.hero .lead{opacity:.9}
+
+/* Buttons */
+.btn-accent{background:var(--accent);color:#1a2a36;border:none;border-radius:.5rem;padding:.6rem 1rem;font-weight:600}
+.btn-accent:hover{background:var(--accent-dark);color:#fff}
+.btn-outline-light{border-radius:.5rem}
+
+/* Cards */
+.card{border:none;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.card.soft{box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card .card-body{padding:1.25rem 1.25rem}
+.icon{width:40px;height:40px;border-radius:10px;background:rgba(214,187,128,.25);display:flex;align-items:center;justify-content:center;margin-bottom:.75rem}
+
+/* Stats */
+.stats{background:var(--accent);color:#1a2a36}
+.stat{padding:12px 0}
+.stat h3{font-weight:700;margin-bottom:.25rem}
+
+/* Lists */
+.check li{margin:.35rem 0}
+.check li::marker{content:'✓  '}
+
+/* CTA */
+.cta{background:var(--secondary);color:#fff}
+
+/* Footer */
+.footer{background:var(--primary);color:#fff}
+.footer a{color:#fff;opacity:.9;text-decoration:none}
+.footer a:hover{opacity:1;text-decoration:underline}
+
+/* FAQ */
+.accordion-button:not(.collapsed){background:rgba(214,187,128,.25);color:#1a2a36}
+
+/* Utilities */
+.mw-720{max-width:720px}
+.mw-900{max-width:900px}
+
+/* Responsive tweaks */
+@media (max-width:768px){
+  .section{padding:48px 0}
+}
